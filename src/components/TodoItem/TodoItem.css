@@ -1,0 +1,109 @@
+.todo-item {
+    background: white;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    color: #1e293b;
+}
+
+.todo-item p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.datetime-container {
+    margin-top: 0.75rem;
+}
+
+.datetime-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.context-menu {
+    position: fixed;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.context-menu-item {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #1e293b;
+}
+
+.context-menu-item:hover {
+    background: #f1f5f9;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.todo-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.todo-item-header h3 {
+    margin: 0;
+    font-size: 1.15em;
+    color: #172b4d;
+    word-break: break-word;
+    flex-grow: 1;
+    line-height: 1.3;
+}
+
+.status-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-left: 15px;
+    flex-shrink: 0; /* Prevent label from shrinking */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Specific colors for status labels */
+.status-label[style*="4CAF50"] { /* New - Green */
+    background-color: #4CAF50;
+}
+.status-label[style*="FFC107"] { /* Ongoing - Amber */
+    background-color: #FFC107;
+}
+.status-label[style*="2196F3"] { /* Done - Blue */
+    background-color: #2196F3;
+}
+
+.todo-item-description {
+    font-size: 0.95em;
+    color: #5e6c84;
+    margin: 0;
+    line-height: 1.5;
+    word-break: break-word;
+}
